@@ -17,4 +17,4 @@ git commit -a -m "updated on `date +'%Y-%m-%d %H:%M:%S'`";
 git push
 
 # remove time stamp
-head -n -1 adblock.txt
+head -n -1 adblock.txt > temp.txt; mv temp.txt adblock.txt
