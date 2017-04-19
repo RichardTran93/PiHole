@@ -10,6 +10,7 @@ sed 's/[\|^]//g' < adblock.sorted > adblock.txt
 # remove files we no longer need
 rm adblock.unsorted adblock.sorted
 
+git rm --cached adblock.txt
 git add adblock.txt
 git commit -a -m "updated on `date +'%Y-%m-%d %H:%M:%S'`"; 
 git push
