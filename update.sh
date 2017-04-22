@@ -18,3 +18,5 @@ git push
 
 # remove time stamp
 head -n -1 adblock.txt > temp.txt; mv temp.txt adblock.txt
+
+echo " `date +'%Y-%m-%d %H:%M:%S'`" >> log.txt
