@@ -1,5 +1,5 @@
 # download adblock lists
-curl -s -L https://adaway.org/hosts.txt > adblock.unsorted
+curl -s -L https://raw.githubusercontent.com/IDKwhattoputhere/uBlock-Filters-Plus/master/uBlock-Filters-Plus.txt > adblock.unsorted
 # look for:  ||domain.tld^
 sort -u adblock.unsorted | grep ^\|\|.*\^$ | grep -v \/ > adblock.sorted
 
