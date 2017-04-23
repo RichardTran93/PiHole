@@ -9,7 +9,7 @@ sed 's/[\|^]//g' < adblock.sorted > adblock.txt
 echo -n "# updated on `date +'%Y-%m-%d %H:%M:%S'`" >> adblock.txt
 
 # remove files we no longer need
-rm adblock.unsorted adblock.sorted
+#rm adblock.unsorted adblock.sorted
 
 git add *
 git commit -a -m "updated on `date +'%Y-%m-%d %H:%M:%S'`";
